@@ -115,5 +115,3 @@ corpus = [dictionary.doc2bow(doc) for doc in documents]
 # and save in Market Matrix format
 corpora.MmCorpus.serialize(CORPUS, corpus)
 # this corpus can be loaded with corpus = corpora.MmCorpus('followers.mm')
-
-

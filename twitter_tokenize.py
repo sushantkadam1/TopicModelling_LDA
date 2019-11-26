@@ -1,7 +1,3 @@
-# Author: Alex Perrier <alexis.perrier@gmail.com>
-# License: BSD 3 clause
-# Python 2.7
-
 '''
 This script takes a set of raw documents composed of twitter timelines.
 Given the 'parent' twitter account, the timelines are those of the followers
@@ -15,14 +11,6 @@ The script:
 * Tokenizes the documents and removes low frequency words and digits
 * Stores back the tokens in the MongoDB database
 * Creates and saves the resulting dictionary and Corpus in Market Matrix format
-
-It follows on the twitter.py script where the timelines are extracted from Twitter
-https://github.com/alexperrier/datatalks/blob/master/twitter/twitter.py
-
-See also the following blog posts
-
-* http://alexperrier.github.io/jekyll/update/2015/09/04/topic-modeling-of-twitter-followers.html
-* http://alexperrier.github.io/jekyll/update/2015/09/16/segmentation_twitter_timelines_lda_vs_lsa.html
 
 Usage:
    python twitter_tokenize.py --screen_name alexip --dbname twitter --save_dict 'data/alexip_dictionary.dict' --save_corpus 'data/alexip_corpus.mm'
